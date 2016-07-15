@@ -69,7 +69,7 @@ public void encenderApagar() {
     }
 }
 /**
-* Se utiliza para cambiar frec de am a fm
+* Se utiliza para cambiar frecuencia de am a fm
 */
 	@Override
 public void cambiarFrec() {
@@ -82,7 +82,7 @@ public void cambiarFrec() {
         frec="AM";
     }	
 		
-    // cambio de emi y memoria de emi
+    // cambio de emisora y memoria de emisora
     emi += emi_m;
     emi_m = emi - emi_m;
     emi -= emi_m;
@@ -93,11 +93,11 @@ public void cambiarFrec() {
 }
         
 /**
-*Adelanta la emi, dependiendo si es am o fm
+*Adelanta la emisora, dependiendo si es am o fm
 */
 	@Override
 public void adelantaremi() {
-    // Adelanta la emi segun se encuentre en AM o FM
+    // Adelanta la emisora segun se encuentre en AM o FM
     if (frec=="AM" && emi != MAX_AM){
         emi += 10;
     }
@@ -110,11 +110,11 @@ public void adelantaremi() {
     }
 }
 /**
-*Atrasa la emi, depende si es am o fm
+*Atrasa la emisora, depende si es am o fm
 */
 	@Override
 public void atrasaremi() {
-    // Adelanta la emi segun se encuentre en AM o FM
+    // Adelanta la emisora segun se encuentre en AM o FM
     if (frec=="AM" && emi != MIN_AM){
         emi -= 10;
     }
@@ -126,12 +126,12 @@ public void atrasaremi() {
     }	
 }
 /**
-*Guarda la emi, utiliza una variable de tipo doble para guardar el numero de la emi y una variable int para 
+*Guarda la emisora, utiliza una variable de tipo doble para guardar el numero de la emisora y una variable int para 
 *la memoria en la que se quiere guardar
 */
 	@Override
 public void guardaremi(double emi, int posicion) {
-    // guarda emi actual en la posicion especificada
+    // guarda emisora actual en la posicion especificada
     if (frec=="AM"){
         memoria_AM[posicion]=this.emi;
     }
@@ -140,7 +140,7 @@ if (frec=="FM"){
 }
 }
 /**
-    *Carga la emi, utiliza un int para la identifacar la memoria
+    *Carga la emisora, utiliza un int para la identifacar la memoria
     */
 public void cargaremi(int posicion) {
     // carga la emi guardada en memoria segun posicion
@@ -153,7 +153,7 @@ if (frec=="FM" && memoria_FM[posicion] > 1){
 }
 }
 /**
-*Sube el vol de uno en uno, mas 10
+*Sube el volumen de uno en uno, mas 10
 */
 	@Override
 public void subirvol() {
@@ -163,7 +163,7 @@ public void subirvol() {
     }
 }
 /**
-*Baja el volimen de uno en uno, min 0
+*Baja el volumen de uno en uno, min 0
 */
 	@Override
 public void bajarvol() {
