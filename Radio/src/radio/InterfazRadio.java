@@ -1,7 +1,7 @@
 /**
  * Julio Isaac Rodriguez 14298
  * Julian Lopez 14084
- * 13.07.2016
+ * 15.07.2015
  * HDT1
  */
 public interface InterfazRadio {
@@ -16,12 +16,12 @@ public interface InterfazRadio {
 
     /**
 	 * Metodo que permite encender y apagar la radio cambiando el
-	 * state de su variable boolean (true=encendido, false=apagado)
+	 * estado de su variable boolean (true=encendido, false=apagado)
 	 */
     public void encenderApagar();
 
     /**
-	 * Metodo que permite cambiar la frec entre AM y FM.
+	 * Metodo que permite cambiar la frecuencia entre AM y FM.
 	 */
     public void cambiarFrec();
 
@@ -32,29 +32,29 @@ public interface InterfazRadio {
     public void cargaremi(int posicion);
 
     /**
-	 * Metodo que permite cambiar a frecs mayores
+	 * Metodo que permite cambiar a frecuencias mayores
 	 */
     public void adelantaremi();
 
     /**
-	 * Metodo que permite cambiar a frecs menores
+	 * Metodo que permite cambiar a frecuencias menores
 	 */
     public void atrasaremi();
 
     /**
-	 * Metodo que permite guardar emis
+	 * Metodo que permite guardar emisoras
 	 * @param emi
 	 * @param posicion
 	 */
     public void guardaremi(double emi, int posicion);
 
     /**
-	 * Metodo que permite subir el vol
+	 * Metodo que permite subir el volumen
 	 */
     public void subirvol();
 
     /**
-	 * Metodo que permite bajar el vol
+	 * Dicho metodo realiza el cambio de volumen
 	 */
     public void bajarvol();
 
